@@ -1,0 +1,23 @@
+name: Feature request or feedback
+description: An idea, a request, or general beta feedback.
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Issues are public.** Don't include sensitive Scenario content, share links, or passwords.
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would you like?
+      description: Describe the idea or feedback, and the problem it solves for you.
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Cynario version
+      description: Filled in automatically when you use "Report an issue" in the app.
+      placeholder: 0.9.0-alpha.1 (abc1234)
+    validations:
+      required: false

@@ -1,0 +1,40 @@
+name: Bug report
+description: Something in Cynario is broken or behaves unexpectedly.
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting! **Issues are public.** Don't include sensitive Scenario content,
+        share links, or passwords. For security problems, use the private report in SECURITY.md.
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: What did you see, and what did you expect instead?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Open the Builder
+        2. ...
+    validations:
+      required: false
+  - type: input
+    id: version
+    attributes:
+      label: Cynario version
+      description: Filled in automatically when you use "Report an issue" in the app. Otherwise see the Builder menu.
+      placeholder: 0.9.0-alpha.1 (abc1234)
+    validations:
+      required: false
+  - type: input
+    id: browser
+    attributes:
+      label: Browser and device
+      placeholder: Firefox 140 on Windows, Safari on iPhone, ...
+    validations:
+      required: false
