@@ -1,83 +1,94 @@
-# Cynario
+<p align="center">
+  <img src=".github/assets/cynario-logo.svg" width="112" height="112" alt="Cynario logo: an open book with a branching graph">
+</p>
 
-**Build and play interactive branching experiences for learning and tabletop exercises—right in your browser.**
+<h1 align="center">Cynario</h1>
 
-Cynario lets you create branching scenarios where people learn by making decisions, seeing the consequences, and trying another path. Free to use. No account required.
+<p align="center">
+  <strong>Build and play interactive branching experiences for learning and tabletop exercises—right in your browser.</strong>
+</p>
 
-## Try it
+<p align="center">Free to use · No account required · Local-first</p>
 
-- **[Open Cynario](https://cynar.io)**: start from the home page.
-- **[Open the Builder](https://cynar.io/builder/)**: create your own scenario.
-- **[Browse the Marketplace](https://cynar.io/marketplace/)**: look at starter scenarios and add one to play or remix.
-- **[Explore use cases](https://cynar.io/use-cases/)**: see what the same tools can do for different kinds of learning.
+<p align="center">
+  <a href="https://cynar.io"><strong>Open Cynario</strong></a> ·
+  <a href="https://cynar.io/builder/"><strong>Start building</strong></a> ·
+  <a href="https://cynar.io/marketplace/"><strong>Browse examples</strong></a> ·
+  <a href="https://cynar.io/use-cases/">Explore use cases</a>
+</p>
 
-## Why branching scenarios
+Cynario turns a situation into a set of choices. Map the possible paths, add the content people need, and let them learn by seeing what follows from their decisions. Try another path to compare outcomes—not just check an answer.
 
-A choice teaches more when you can see what follows from it. In a Cynario scenario, a learner picks an option, sees the result, and can go back and try something different. The situation repeats, but their understanding changes.
+## From a branching map to a playable experience
 
-You can build:
+![Cynario Builder showing the fictional A first-day decision onboarding scenario, with five scenes and six connected paths](.github/assets/builder-overview.png)
 
-- onboarding and "what would you do?" training
-- classroom lessons and knowledge checks
-- incident-response and tabletop exercises
-- policy and compliance practice
-- interactive fiction and branching stories
+**See the whole story.** Connect scenes on the Builder graph and follow how each choice leads to a different outcome.
 
-## How it works
+![Cynario Player showing Your first team project, a fictional onboarding prompt with choices to ask a teammate for context or sketch an idea first](.github/assets/player-preview.png)
+
+**Focus on the decision.** The Player turns the same scenario into a readable experience, one scene and its choices at a time.
+
+Both screenshots show the current app with an authored, fictional onboarding demo—not a real team or incident.
+
+## Build, play, refine, share
 
 1. **Author.** Lay out scenes on a visual graph and connect them with choices.
-2. **Play.** Run the scenario as a focused, story-style experience.
-3. **Iterate.** Test a scene or the whole path, adjust it, and play again.
-4. **Share.** Export a file, send a link, or work on it with others live.
+2. **Play.** Experience the scenario from the learner's perspective.
+3. **Iterate.** Test a scene or a whole path, adjust it, and play again.
+4. **Share.** Export a file, send an encrypted share link, or co-author live.
+
+Use the same tools for first-day onboarding, classroom lessons, policy practice, incident-response exercises, tabletop discussions, and branching fiction. Start small: one situation, two meaningful choices, and a consequence worth discussing. Add more paths as the learning experience takes shape.
 
 ## What you can do today
 
-**Six scene modes**, which you can mix in one scenario:
+Mix **six scene modes** in one scenario:
 
-- **Decision**: narrative with one or more choices.
-- **Slides**: a presentation-style deck inside a scene.
-- **Quiz**: choices with grading and feedback.
-- **Video**: time-based video with hotspots that can reveal content or branch.
-- **Image**: an image with interactive regions.
-- **Custom**: direct editing of a scene's underlying source, for authors who want full control.
+| Mode | What it brings to the experience |
+| --- | --- |
+| **Decision** | Narrative and choices that lead to different paths. |
+| **Slides** | A presentation-style deck inside a scene. |
+| **Quiz** | Choices with grading and feedback. |
+| **Video** | Time-based video with hotspots to reveal content or branch. |
+| **Image** | An image with interactive regions. |
+| **Custom** | Direct editing of a scene's underlying source. |
 
-**Logic.** Use variables, conditions, and effects so earlier choices change what happens later, with scoring and outcomes.
+**Logic:** variables, conditions, and effects let earlier choices change what happens later, including scoring and outcomes.
 
-**Media.** Add images and video to your scenarios. Uploaded media is stored locally in your browser; externally hosted media stays with its provider.
+**Media:** add images and video. Uploaded media is stored locally in your browser; externally hosted media stays with its provider.
 
-**Live collaboration.** Co-author with other people in real time. Live sessions use direct browser connections or a configured relay; availability and behavior depend on the device and network.
+**Live collaboration:** co-author in real time through direct browser connections or a configured relay. Availability and behavior depend on the device and network.
 
-Cynario is under active development, and the interface and features continue to evolve.
+## Take your work with you
 
-## Export and delivery
+- **`.cynario`** exports the scenario's structure and content as readable JSON. It does **not** include uploaded media.
+- **`.cynario.zip`** packages the scenario together with its uploaded media. Use it when those files need to travel with your work.
+- **SCORM 1.2** exports a package for a learning management system. Test a small export in your target LMS before relying on it; platforms differ in how they handle SCORM.
 
-- **`.cynario`**: a portable file with your scenario's structure and content, as readable JSON, so you own your work. It does not include uploaded media.
-- **`.cynario.zip`**: the scenario packaged together with its uploaded media.
-- **SCORM 1.2**: export a package for a learning management system. We recommend testing a small export in your target LMS before relying on it, since LMS platforms differ in how they handle SCORM.
+## Your data, your responsibility
 
-## Your data and privacy
+Cynario is designed to be local-first. Scenarios are stored in your browser, not in a central Cynario account. **No account required does not mean anonymous.**
 
-Cynario is designed to be local-first. Your scenarios are stored in your browser, not in a central Cynario account. "No account required" does not mean anonymous.
+- **Export regular backups.** Clearing site data or switching devices can lose browser-stored scenarios. Choose `.cynario.zip` when your backup needs uploaded media.
+- **Share deliberately.** Encrypted share links protect scenario content while it travels. Complete share links and room links are sensitive access credentials; do not post them publicly.
+- **Networks still expose metadata.** Providers may see connection times and addresses even when content is encrypted.
+- **External media contacts its provider.** An embedded or hosted video is not isolated from that service.
+- **Exports are not automatically encrypted.** Handle exported files and copied content according to their sensitivity.
 
-- **Back up your work.** Because scenarios live in your browser, clearing site data or switching devices can lose them. Export regularly, and use `.cynario.zip` when uploaded media needs to travel with your work.
-- **Sharing is explicit.** Encrypted share links protect scenario content while it travels. Treat complete share links and room links as sensitive access credentials; do not post them publicly.
-- **Network providers may see metadata** such as connection times and addresses, even when content is encrypted.
-- **Embedded or external media** (for example a hosted video) contacts that media provider.
-- **Exported files and copied content are not automatically encrypted.** Handle them according to how sensitive the scenario is.
+## Project status and direction
 
-## Project status
+**Cynario is in active development.** The app is available at [cynar.io](https://cynar.io); its interface and features continue to evolve.
 
-Cynario is in active development and the app is available at [cynar.io](https://cynar.io).
+Cynario is being built for both browser-based use and self-hosted deployments. **Organization-managed instances, governance controls, and additional deployment options are in development.**
 
-This repository is the public home for bug reports, feature requests, and feedback. The application source code has not been published here yet. We plan to publish source in stages and make organizational self-hosting easier to adopt. No public clone-and-run setup is offered here yet.
+This repository is the public home for bug reports, feature requests, and feedback. **The application source remains private and has not been published here yet.** Source publication is planned in stages. Public self-hosting setup instructions are not provided here yet. See the [public roadmap](https://cynar.io/roadmap/) for the project's direction.
 
 The [LICENSE](LICENSE) file describes the license accompanying this repository's contents.
 
 ## Feedback and security
 
-- [Report a bug](https://github.com/cybersader/cynario/issues/new?template=bug_report.yml)
-- [Request a feature](https://github.com/cybersader/cynario/issues/new?template=feature_request.yml)
-- [Browse open issues](https://github.com/cybersader/cynario/issues)
-- **Security concerns:** please report them privately. See [SECURITY.md](SECURITY.md).
+[Report a bug](https://github.com/cybersader/cynario/issues/new?template=bug_report.yml) · [Request a feature](https://github.com/cybersader/cynario/issues/new?template=feature_request.yml) · [Browse open issues](https://github.com/cybersader/cynario/issues)
 
-> **Issues are public.** Please do not include real procedures, sensitive scenario content, share links, room links, or passwords in a report.
+For security concerns, please report privately using [SECURITY.md](SECURITY.md).
+
+> **Issues are public.** Do not include real procedures, sensitive scenario content, share links, room links, or passwords in a report.
